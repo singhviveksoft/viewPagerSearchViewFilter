@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView
+    app:cardCornerRadius="10dp"
+    android:elevation="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/apk/res-auto"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/wonder_img"
+            android:layout_margin="4dp"
+
+            android:layout_width="100dp"
+            android:layout_height="100dp"></ImageView>
+
+        <TextView
+            android:id="@+id/countryName_txt"
+            android:layout_toRightOf="@id/wonder_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/actor"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:text="@string/username"></TextView>
+
+        <TextView
+            android:id="@+id/wonderName_txt"
+            android:layout_toRightOf="@id/wonder_img"
+            android:layout_below="@id/countryName_txt"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/actor"
+            android:text="@string/mobile_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:id="@+id/countryCode_txt"
+            android:layout_below="@id/wonderName_txt"
+            android:layout_toRightOf="@id/wonder_img"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:textSize="16sp"
+
+            android:textColor="@color/black"
+            android:fontFamily="@font/actor"
+            android:text="@string/email_id"
+            android:layout_height="wrap_content"></TextView>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
+
